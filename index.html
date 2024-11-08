@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caja Registradora</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  </head>
+  <body>
+    <h1>Caja Registradora</h1>
+    <section class="contenedor">
+      <div class="contProductos">
+        <h2>Productos</h2>
+        <form class="formProductos">
+          <div id="productoPrecio">
+            <label for="productos" class="required">Producto:</label>
+            <select name="productos" id="productos" required>
+              <option value="value0" data-image="./img/tienda.png" selected>
+                Seleccione un producto
+              </option>
+              <option
+                value="value1"
+                data-price="75500"
+                data-image="./img/sombras&susurros.jpg"
+              >
+                Sombras y susurros: Vivencias extrañas y tenebrosas en la
+                arqueología (Spanish Edition)
+              </option>
+              <option
+                value="value2"
+                data-price="99900"
+                data-image="./img/loqueelvientosellevo.jpg"
+              >
+                Lo que el viento se llevó
+              </option>
+              <option
+                value="value3"
+                data-price="75600"
+                data-image="./img/elpoderdelamente.webp"
+              >
+                El Poder del Pensamiento Positivo: Descubra el Secreto Para
+                Lograr Todo lo que Quiere en la Vida Ahora - el Secreto Para el
+                Exito Esta en su Mente
+              </option>
+
+              <option
+                value="value3"
+                data-price="64850"
+                data-image="./img/lamagia.jpg"
+              >
+                La magia de pensar en grande
+              </option>
+              <option
+                value="value3"
+                data-price="112570"
+                data-image="./img/lateoria.jpg"
+              >
+                La Teoría de la Relatividad: Memorias & Margaritas
+              </option>
+              <option
+                value="value3"
+                data-price="100000"
+                data-image="./img/elespacio.jpg"
+              >
+                El espacio entre tú y yo (Portada II versión color) (Spanish
+                Edition)
+              </option>
+              <option
+                value="value3"
+                data-price="75000"
+                data-image="./img/valentia.jpg"
+              >
+                Valentía: Edición a color (Spanish Edition)
+              </option>
+              <option
+                value="value3"
+                data-price="80960"
+                data-image="./img/queridoYo.jpg"
+              >
+              Querido yo: Vamos a estar bien (Spanish Edition)
+              </option>
+            </select>
+
+            <!-- Contenedor de la imagen -->
+            <img
+              id="productoImagen"
+              src="./img/tienda.png"
+              alt="Imagen del producto"
+              style="display: none; width: 300px; height: auto"
+            />
+
+            <p id="precioSeleccionado">Precio: -</p>
+          </div>
+        </form>
+      </div>
+
+      <div class="contCompras">
+        <h2>Compra</h2>
+        <form class="formCompras">
+          <div class="infoCompra">
+            <div id="uno">
+              <label for="productotxt">Producto</label>
+              <input id="productotxt" type="text" disabled />
+            </div>
+            <div id="dos">
+              <label for="cantidadProducto">Cantidad</label>
+              <input id="cantidadProducto" type="number" min="0" />
+            </div>
+          </div>
+          <div class="botones">
+            <input class="buton" id="agregar" type="button" value="Agregar" />
+            <button class="buton" id="limpiar" type="reset">Limpiar</button>
+          </div>
+          <div class="infoTotal">
+            <label for="registroCompra">Registro</label>
+            <textarea name="" id="registroCompra" disabled></textarea>
+          </div>
+          <div class="infoFinal">
+            <p id="totalComp">Total: $</p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

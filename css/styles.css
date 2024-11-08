@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px 20px;
+    border-top: solid 1px #444;
+  }
+  
+  h2 {
+    color: #444;
+    text-align: center;
+  }
+  
+  .formProductos,
+  .formCompras {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contProductos,
+  .contCompras {
+    width: 45%;
+    min-width: 300px;
+  }
+  
+  #productoPrecio {
+    margin-bottom: 20px;
+  }
+  
+  select,
+  input,
+  textarea {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  #productoImagen {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  #precioSeleccionado {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+  }
+
+  .botones{
+    margin: 10px 0;
+    text-align: center;
+    padding: 0 80px;
+  }
+  
+  .buton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .buton:hover {
+    background-color: #218838;
+  }
+
+  #limpiar{
+    background-color: #f44336;
+
+  }
+  #limpiar:hover{
+    background-color: #ce271b;
+  }
+  
+  .infoCompra {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .infoCompra div {
+    width: 45%;
+  }
+  
+  .infoTotal,
+  .infoFinal {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #totalComp {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
